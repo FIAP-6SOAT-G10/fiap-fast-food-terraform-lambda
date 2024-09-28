@@ -5,6 +5,6 @@ output "lambda_bucket_name" {
 }
 
 output "function_name" {
-  description = "AWS Lambda to perform login accordingly to username"
+  description = "AWS Lambda to perform login and authentication accordingly to username"
   value = aws_lambda_function.login.function_name
 }
