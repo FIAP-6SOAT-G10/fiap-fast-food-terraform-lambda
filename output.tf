@@ -1,6 +1,6 @@
 # Output value definitions
 output "lambda_bucket_name" {
-  description = "Name of the S3 bucket used to store function code."
+  description = "Name of the S3 bucket used to store AWS Lambda function code."
   value = aws_s3_bucket.login_bucket.id
 }
 
