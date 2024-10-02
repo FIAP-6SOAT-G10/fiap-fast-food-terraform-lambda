@@ -9,6 +9,7 @@ resource "aws_lambda_function" "login" {
 
   source_code_hash = data.archive_file.login.output_base64sha256
   role = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/LabRole"
+  timeout = 10
 }
 
 resource "aws_cloudwatch_log_group" "login" {
